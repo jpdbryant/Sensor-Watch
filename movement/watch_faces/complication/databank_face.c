@@ -29,12 +29,7 @@
 #include "watch_private_display.h"
 
 const char *pi_data[] = {
-    "PI", "314159265358979323846264338327950288419716939937510582097494459230781640628620899862803482534211706798214808651328230664709384460955058223172535940812848111745028410270193852110555964462294895493038196442",
-    "S ", "9192631770",
-    "31", "2147483648",
-    "32", "4294967296",
-    "63", "9223372036854775808",
-    "64", "18446744073709551616",
+    "  ", "CASIJO",
 };
 //we show 6 characters per screen
 
@@ -68,7 +63,7 @@ static void display()
 {
     char buf[14];
     int page = databank_state.current_word;
-    sprintf(buf, "%s%2d", pi_data[databank_state.databank_page * 2 + 0], page);
+    // sprintf(buf, "%s%2d", pi_data[databank_state.databank_page * 2 + 0], page);
     watch_display_string(buf, 0);
     bool data_ended = false;
     for (int i = 0; i < 6; i++) {
