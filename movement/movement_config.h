@@ -95,4 +95,10 @@ const watch_face_t watch_faces[] = {
  */
 #define MOVEMENT_DEFAULT_LED_DURATION 1
 
+/* If the watch is physically modified to tie the LIGHT
+* button to the A4 input, defining this will enable the
+* watch to wake, and light up, on the LIGHT button
+*/
+#define MOVEMENT_SLEEP_LIGHT_A4 1
+
 #endif // MOVEMENT_CONFIG_H_
